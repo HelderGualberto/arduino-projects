@@ -1,5 +1,6 @@
 import serial, time
-with serial.Serial('/dev/cu.usbserial-0001', 230400, timeout=10) as ser:
+
+with serial.Serial('/dev/cu.usbmodem141101', 2000000, timeout=10) as ser:
     c = 0;
     t_start = time.time()
     while(True):
